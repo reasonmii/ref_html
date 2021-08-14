@@ -7,6 +7,11 @@ ex) css property to add mouse cursor to button
 - stackoverflow
 - CSS-Tricks
 - developer.mozilla.org (MDN Web Docs)
+- ★ codepen.io/pen/
+  Paste your HTML, CSS, JS codes
+  Save the file
+  Paste its url to stackoverflow
+  -> This would help others see your codes and how it works a lot better  
 
 ● Debugging the code
 - Debugging : Finding and fixing errors in code
