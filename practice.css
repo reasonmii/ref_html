@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+}
+
+/* We should always use this 4 steps
+-> link, visited, hover, active*/
+.more-info:link, .more-info:visited {
+  color: black;  
+}
+
+.more-info:hover, .more-info:active {
+  text-decoration: none;
+}
+
+.details-title {
+  text-transform:uppercase;
+  font-size: 16px;
+}
+
+.details-list {
+  list-style: square;
+}
+
+/* cursor:pointer 
+-> when the mouse points the button,
+   it would be changed from an arrow to a hand*/
+.add-cart{
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background-color:#fff;
+  color: #000; 
+}
