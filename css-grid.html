@@ -1,3 +1,13 @@
+<!-- CSS Grid is a set of CSS properties for building 2-dimensional layouts
+- The main idea behind CSS Grid is that we divide a container element into rows and columns
+  that can be filled with its child elements
+- In two-dimensional contexts, CSS Grid allows us to write less nested HTML and easier-to-read CSS
+- CSS Grid is not meant to replace flexbox!
+  Instead, they work perfectly together
+  Need a 1D layout? Use flexbox
+  Need a 2D layout? Use CSS Grid
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,11 +51,27 @@
 
         /* CSS GRID */
         display: grid;
-        /* The code below means create 4 columns with the width we set */
-        grid-template-columns: 200px 200px 100px 100px;
-        /* The code below means create 2 rows with the height we set
-        If you defined the height individually, those would not stretch */
-        grid-template-rows: 300px 200px;
+        /* The code below means
+        - Create 4 columns with the width we set
+          grid-template-columns: 200px 200px 100px 100px;
+        - Create 2 rows with the height we set
+          If you defined the height individually, those would not stretch
+          grid-template-rows: 300px 200px;
+
+        ★ 1fr : stretch the width in order to fill all space according to screen size (flexible width)
+        2fr : double the space than others
+        - grid-template-columns: 1fr 1fr 1fr 1fr;
+        - grid-template-columns: repeat(4, 1fr);
+        -> two codes are the same
+
+        auto : only take the space that is needed
+        grid-template-columns: 1fr 1fr 1fr auto;
+        grid-template-rows: 1fr auto; */
+
+        grid-template-columns: repeat(4, 1fr);
+        /* ★ Since the highest height is 150px, 1fr is set to 150px as well */
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
 
         /* Create the gap between both columns and rows
         'grid-gap' also works
@@ -53,24 +79,92 @@
         gap: 30px;
 
         When you want to create the gap separately for columns and rows*/
-        column-gap: 30px;
-        row-gap: 60px;
+        column-gap: 20px;
+        row-gap: 40px;
+
+        /* ★ Temporarily remove from the page */
+        display: none;
+      }
+
+      /* Change the location of the box 'el--8', using GRID
+
+      ★ How can we see GRID number?
+      Select the word in the page - Inspect
+      - Go to the line : <div class="container--1">
+      - click 'grid' */
+      .el--8 {
+        /* Set the element between column number 2 and 3
+        grid-column: 2 / 3;
+
+        ★ If the end point is just one more than the first, we can omit it */
+        grid-column: 2;
+
+        /* Set the element between row number 1 and 2 */
+        grid-row: 1 / 2;
+
+        /* ★ Since, there's no row '3', row '3' is inserted by this code
+        grid-row: 1 / span 3; */
+      }
+
+      .el--2 {
+        /* When the difference between the start and the end number is bigger than 1
+        -> ★ The box is spanned
+        - grid-column: 1 / 4;
+        - grid-column: 1 / span 3;
+        -> both are the same code
+        
+        ★ When we want to span the element all the way to the end, use -1*/
+        grid-column: 1 / -1;
+        grid-row: 2;
       }
 
       .container--2 {
-        /* ★ Remove from the page */
-        display: none;
+        /* ★ Remove from the page
+        display: none; */
 
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligning tracks inside container: distribute empty space
+        ★ This can be done because the the grid container is actually bigger than the grid itself
+        GRID container size : width = 700px
+        GRID size : grid-template-columns(125px + 200px + 125px) + GAP
+
+        Align entire tracks at the center of the container horizontally */
+        justify-content: center;
+        /* Distribute empty space evenly
+        justify-content: space-between; */
+
+        /* Align entire tracks at the center of the container vertically  */
+        align-content: center;
+
+        /* When there's two rows, first one would be at the top and the second one would be at the bottom
+        align-content: space-between; 
+        
+        align-content: start;
+        align-content: end; */
+
+        /* Aligning items INSIDE cells: moving items around inside cells */
+        align-items: center; /* vertically : stretch(default), center, start, end */
+        justify-items: center; /* horizontally : stretch(default), center, start, end */
+      }
+
+      .el--3 {
+        /* overwrite : individual setting */
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
@@ -82,7 +176,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
