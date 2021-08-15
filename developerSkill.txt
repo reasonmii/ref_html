@@ -33,3 +33,5 @@ How to compare two HTML files' codes
 2) Put the original code and your code - Click 'Find Difference'
    This check every small changes
 
+● Tips!
+1) Use 'background-color' in CSS to see the scope of the block
