@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* apply 'border-box' to every elements */
+  box-sizing: border-box;
+}
+
+/*======================= PAGE SECTIONS =======================*/
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1087ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* Final element width = right border + right padding + width + left padding + left border
+Final element height = top border + top padding + height + bottom padding + bottom border
+
+However, when you code 'box-sizing: border-box'
+Final element width = width
+Final element height = height
+-> Here, 'width' or 'height' itself contains every other things
+   So, we just have to code 'width' or 'height' without worrying about other things
+
+Without 'border-box', the 'aside' part would move to the bottom of the page,
+because the width of 'article' + the width of 'aside' is bigger than the whole width of container
+However, with 'border-box', now aside is located where it should be
+The padding areas are not separated anymore, they are absorbed to the whole width or height of 'aside' */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+  /* box-sizing: border-box; */
+}
+
+/*======================= SMALLER ELEMENTS =======================*/
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(even) {
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+article p:last-child {
+  color: black;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline /*wavy*/ orange;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* FLOATS : old ways for layout
+- Element is removed from the normal flow: "out of flow"
+- Text and inline elements will wrap around the floated element
+- The container will not adjust its height to the element */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* How we can adjust the height of the background of floating elements
+Method1)
+1) Create <div></div> without any contents
+2) code : both = left & right
+
+.clear {
+  clear: both;
+}
+
+Method2)
+Create the last child element in the class
+So, it's the same as creating <div class="clear></div> at the last part
+
+::after
+- It only appears if we difine 'content' property
+- By default, pseudo elements like after and before are inline elements
+  ★ However clearing float like this only works for the block level elements
+  So we need 'display' property 
+*/
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* article 900px + aside 300px = 1200px
+-> The size of the whole container
+If you set 'article' 825, there would be the space between 'article' and 'aside'*/
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+/* When you move 'aside' using 'float', 'footer' will come with 'aside'
+This is because 'float' works for the following elements as well
+That's why we replace 'float' with 'grid' and 'flexbox'
+If you want to put 'footer' at the bottom again, we can create empty div 'clear' or use '.clearfix' class 
+But, here, we can use 'footer' itself */
+footer {
+  clear: both;
+}
