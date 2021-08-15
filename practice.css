@@ -1,11 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Without clearfix, this code won't work
+Why? container's height would be 0, because all contents are floating */
+.container {
+/*   background-color: red; */
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
 }
 
 .product {
@@ -23,8 +41,19 @@ body {
   padding: 15px;
 }
 
+/* remaining width
+825px(whole width) - 4px(border) * 2 - 250px(shoes image) - 40px(space between 3 boxes) * 2 = 487
+There should be two blocks for texts : 487 / 2 = 243.5 */
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -33,6 +62,8 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
 }
 
 .sale {
@@ -43,25 +74,32 @@ body {
   font-wieght: bold;
   letter-spacing: 2px;
   padding: 7px 15px;
-  
+
   /* width: 40px;
   text-align: center; */
   display: inline-block;
-  
+
   position: absolute; /* the parent element : product - position: relative */
   top: -17px;
   left: -38px;
 }
 
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
 /* We should always use this 4 steps
 -> link, visited, hover, active*/
-.more-info:link, .more-info:visited {
+.more-info:link,
+.more-info:visited {
   color: black;
   margin-bottom: 30px;
   display: inline-block;
 }
 
-.more-info:hover, .more-info:active {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
 
@@ -94,11 +132,16 @@ body {
   background-color: #885214;
 }
 
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 20px;
+}
+
 .details-title {
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
 }
 
 .details-list {
@@ -114,7 +157,7 @@ body {
 /* cursor:pointer 
 -> when the mouse points the button,
    it would be changed from an arrow to a hand*/
-.add-cart{
+.add-cart {
   background-color: #000;
   border: none;
   color: #fff;
@@ -127,12 +170,6 @@ body {
 }
 
 .add-cart:hover {
-  background-color:#fff;
-  color: #000; 
-}
-
-h3::before {
-  background-color: #000;
-  padding: 5px 10px;
-  
+  color: #000;
+  background-color: #fff;
 }
