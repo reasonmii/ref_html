@@ -86,7 +86,8 @@
 
       .page-link:hover,
       .page-link:active,
-      /* ★ If you don't write .page-link, the 'Selector Specificity' is lower than the upper one
+      /* ★ If you don't write .page-link, the 'Selector Specificity' is lower than the upper two
+            which are '.page-link:link' and '.page-link:visited'
       - This is because '.page-link:link' and '.page-link:visited' has 2 steps (pseudo class), they have higher 'Selector Specificity'
         So, page number '3' button would have still black text color
       - However, by adding '.page-link' at the front, we can make higher 'Selector Specificity', because it has 2 classes
