@@ -670,7 +670,10 @@
 
               <!-- ★ action="#" : This should be where the data should be sent
               However, we need additional backend code (not html) to actually send it -->
-              <form class="cta-form" action="#">
+              <!-- <form class="cta-form" action="#"> -->
+              <!-- ★ We can use 'netlify' for this!
+              By doing so, we can get users' submission actually via netlify -->
+              <form class="cta-form" name="sign-up" netlify>
                 <!-- ★ By using, <div> we can put each things in different lines -->
                 <div>
                   <!-- ★ for="exact ID we want to link"
@@ -685,6 +688,7 @@
                     id="full-name"
                     type="text"
                     placeholder="John Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -695,6 +699,7 @@
                     id="email"
                     type="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
@@ -706,7 +711,7 @@
                 <div>
                   <!-- ★ Create an option box -->
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <!-- ★ What is 'value' for?
                       When the user select 'Friends and family', the value 'friends' would be saved in the program
                       If the 'value' is empty, users are not allowed to select it -->
