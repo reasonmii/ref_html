@@ -41,9 +41,7 @@ How to compare two HTML files' codes
 1) Use 'background-color' in CSS to see the scope of the block
 2) When something looks strange, click the word on the page, and try 'inspect'
 
-
-
-Useful websites
+## Useful websites
 
 color
 - Palettes
