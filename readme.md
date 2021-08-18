@@ -40,3 +40,57 @@ How to compare two HTML files' codes
 #### Tips!
 1) Use 'background-color' in CSS to see the scope of the block
 2) When something looks strange, click the word on the page, and try 'inspect'
+
+
+
+Useful websites
+
+color
+- Palettes
+- Tailwind CSS
+- Open Color
+- Paletton
+- Coolors
+  More - Contrast Checker
+- Tint and Shade Generator
+
+image
+- unsplash
+- pexels
+- DrawKit
+- unDraw
+- Pixabay
+- Squoosh
+- UI Faces : https://uifaces.co/
+
+resize image
+- Squoosh : https://squoosh.app/
+
+icons
+- Phosphor Icons
+- Iconicons
+- icons8
+
+font
+- Google font
+1) Select the font with bold 400 for regular, 500 for medium, 700 for real bold
+2) Copy the link
+3) Paste to html file
+
+font size
+- https://type-scale.com/
+
+Good web design ref
+- Land-book.com
+- One Page Love
+- awwwards
+
+CSS functions
+- Brwoser support : https://caniuse.com/
+  Check whether the browser supports the specific CSS function
+  If not, we can check the code for that browser
+  (browser: IE, Edge, Chrome, Firefox, Safari, ...
+   function: flexbox, css grid, blur, appearance, ...)
+  
+Netlify
+https://www.netlify.com/
