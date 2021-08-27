@@ -24,7 +24,7 @@ https://www.youtube.com/channel/UCNsU-y15AwmU2Q8QTQJG1jw
 
 ## ★★ Useful Websites ★★
 
-##### Color
+### Color
 -	Palettes https://flatuicolors.com/
 -	Tailwind CSS https://tailwindcss.com/
 -	Open Color https://yeun.github.io/open-color/
@@ -33,7 +33,7 @@ https://www.youtube.com/channel/UCNsU-y15AwmU2Q8QTQJG1jw
 menu : More - Contrast Checker
 -	Tint and Shade Generator https://maketintsandshades.com/
 
-##### image
+### image
 -	Unsplash
 -	Pexels
 -	DrawKit
@@ -41,28 +41,28 @@ menu : More - Contrast Checker
 -	Pixabay
 -	UI Faces : https://uifaces.co/
 
-##### Resize image
+### Resize image
 -	Squoosh : https://squoosh.app/
 
-##### icons
+### icons
 -	Phosphor Icons
 -	Iconicons
 -	icons8
 
-##### Google font
+### Google font
 ①	Select the font with bold 400 for regular, 500 for medium, 700 for real bold
 ②	Copy the link
 ③	Paste to html file
 
-##### font size
+### font size
 -	https://type-scale.com/
 
-##### Good web design ref
+### Good web design ref
 -	Land-book.com
 -	One Page Love
 -	awwwards
 
-##### Check brwoser support of ‘CSS functions’
+### Check brwoser support of ‘CSS functions’
 https://caniuse.com/
 -	Check whether the browser supports the specific CSS function
 -	If not, we can check the code for that browser
@@ -72,7 +72,7 @@ https://caniuse.com/
 
 ## Visual Studio Code
 
-##### Extensions
+### Extensions
 -	Prettier - Code formatter
 It automatically formats your code whenever you save it
 You don’t have to worry about indentation
@@ -91,7 +91,7 @@ At the bottom, we now have ‘Go Live’ button
 It opens the html page of the code
 Also, if we change the code, it automatically reload the page without F5
 
-##### Setting
+### Setting
 Settings
 -	default formatter 검색 – Prettier - Code formatter 선택
 -	format on save 검색 – check the box
@@ -121,7 +121,7 @@ Body : For all things visible in the browser
 Always Google when you don't know
 ex) css property to add mouse cursor to button css how to center an anchor element mdn css text align
 
-##### Useful sites
+### Useful sites
 -	stackoverflow
 -	CSS-Tricks
 -	developer.mozilla.org (MDN Web Docs)
@@ -129,7 +129,7 @@ ex) css property to add mouse cursor to button css how to center an anchor eleme
 Here, you can code 'html' and see how it works directly
 Paste your HTML, CSS, JS codes Save the file Paste its url to stackoverflow -> This would help others see your codes and how it works a lot better
 
-##### Debugging the code
+### Debugging the code
 -	Debugging : Finding and fixing errors in code
 -	Most common error : no end tag, not link css file
 How to find errors in HTML
