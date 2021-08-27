@@ -44,7 +44,7 @@ menu : More - Contrast Checker
 ##### Resize image
 -	Squoosh : https://squoosh.app/
 
-### icons
+##### icons
 -	Phosphor Icons
 -	Iconicons
 -	icons8
