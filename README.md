@@ -1,8 +1,8 @@
-Build Responsive Real-World Websites with HTML and CSS
+# Build Responsive Real-World Websites with HTML and CSS
 Udemy 2021.08
 Font : Microsoft New Tai Lue
 
-Download course material
+### Download course material
 - theory-lectures-v2-BEST.pdf
 slides for all theory lectures, with GOOD image quality (481 MB download)
 - theory-lectures-v2-SMALLER.pdf
@@ -10,7 +10,7 @@ slides for all theory lectures, with AVERAGE image quality (158 MB download)
 - all-design-guidelines.pdf
 a summary of all the web design rules and guidelines we will study in Section 5
 
-Updates & community
+### Updates & community
 -	During the course, we use many online tools and resources, which are all on my resources page
 http://codingheroes.io/resources/
 -	If you want to get updates on new courses or other important stuff,
@@ -22,9 +22,9 @@ You can still subscribe, as I might start posting videos in the future 😉
 https://www.youtube.com/channel/UCNsU-y15AwmU2Q8QTQJG1jw
 
 
-★★ Useful Websites ★★
+### ★★ Useful Websites ★★
 
-Color
+##### Color
 -	Palettes https://flatuicolors.com/
 -	Tailwind CSS https://tailwindcss.com/
 -	Open Color https://yeun.github.io/open-color/
@@ -33,7 +33,7 @@ Color
 menu : More - Contrast Checker
 -	Tint and Shade Generator https://maketintsandshades.com/
 
-image
+##### image
 -	Unsplash
 -	Pexels
 -	DrawKit
@@ -41,28 +41,28 @@ image
 -	Pixabay
 -	UI Faces : https://uifaces.co/
 
-Resize image
+##### Resize image
 -	Squoosh : https://squoosh.app/
 
-icons
+### icons
 -	Phosphor Icons
 -	Iconicons
 -	icons8
 
-Google font
+##### Google font
 ①	Select the font with bold 400 for regular, 500 for medium, 700 for real bold
 ②	Copy the link
 ③	Paste to html file
 
-font size
+##### font size
 -	https://type-scale.com/
 
-Good web design ref
+##### Good web design ref
 -	Land-book.com
 -	One Page Love
 -	awwwards
 
-Check brwoser support of ‘CSS functions’
+##### Check brwoser support of ‘CSS functions’
 https://caniuse.com/
 -	Check whether the browser supports the specific CSS function
 -	If not, we can check the code for that browser
@@ -70,9 +70,9 @@ https://caniuse.com/
 -	function: flexbox, css grid, blur, appearance, ...
 
 
-Visual Studio Code
+### Visual Studio Code
 
-Extensions
+##### Extensions
 -	Prettier - Code formatter
 It automatically formats your code whenever you save it
 You don’t have to worry about indentation
@@ -91,7 +91,7 @@ At the bottom, we now have ‘Go Live’ button
 It opens the html page of the code
 Also, if we change the code, it automatically reload the page without F5
 
-Setting
+##### Setting
 Settings
 -	default formatter 검색 – Prettier - Code formatter 선택
 -	format on save 검색 – check the box
@@ -117,11 +117,11 @@ Head : For things invisible in the browser
 Body : For all things visible in the browser
 
 
-Developer Skills
+### Developer Skills
 Always Google when you don't know
 ex) css property to add mouse cursor to button css how to center an anchor element mdn css text align
 
-Useful sites
+##### Useful sites
 -	stackoverflow
 -	CSS-Tricks
 -	developer.mozilla.org (MDN Web Docs)
@@ -129,7 +129,7 @@ Useful sites
 Here, you can code 'html' and see how it works directly
 Paste your HTML, CSS, JS codes Save the file Paste its url to stackoverflow -> This would help others see your codes and how it works a lot better
 
-Debugging the code
+##### Debugging the code
 -	Debugging : Finding and fixing errors in code
 -	Most common error : no end tag, not link css file
 How to find errors in HTML
@@ -147,7 +147,7 @@ Tips!
 -	When something looks strange, click the word on the page, and try 'inspect'
 
 
-Testing Performance with Lighthouse
+### Testing Performance with Lighthouse
 -	Right click the page – Inspect – Lighthouse
 Click the checkbox you want to check
 - Performance, Best practices, Accessibility, SEO & Desktop
@@ -157,7 +157,7 @@ Generate report
 ex) image size, color contrast, etc.
 -	★ We should test the page every time before we launching it to the Internet
 
-Optimize images
+### Optimize images
 Resize image
 -	You need a program to resize the image
 Squoosh : https://squoosh.app/
@@ -171,7 +171,7 @@ ex) Can I use ‘webp’
 If some browsers don’t support ‘webp’, we should write code to fix this problem
 
 
-Deployment to Netlify
+### Deployment to Netlify
 https://www.netlify.com/
 Launch new site
 -	Drag and drop the folder
