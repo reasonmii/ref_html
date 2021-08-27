@@ -2,7 +2,7 @@
 Udemy 2021.08
 Font : Microsoft New Tai Lue
 
-### Download course material
+## Download course material
 - theory-lectures-v2-BEST.pdf
 slides for all theory lectures, with GOOD image quality (481 MB download)
 - theory-lectures-v2-SMALLER.pdf
@@ -10,7 +10,7 @@ slides for all theory lectures, with AVERAGE image quality (158 MB download)
 - all-design-guidelines.pdf
 a summary of all the web design rules and guidelines we will study in Section 5
 
-### Updates & community
+## Updates & community
 -	During the course, we use many online tools and resources, which are all on my resources page
 http://codingheroes.io/resources/
 -	If you want to get updates on new courses or other important stuff,
@@ -22,7 +22,7 @@ You can still subscribe, as I might start posting videos in the future 😉
 https://www.youtube.com/channel/UCNsU-y15AwmU2Q8QTQJG1jw
 
 
-### ★★ Useful Websites ★★
+## ★★ Useful Websites ★★
 
 ##### Color
 -	Palettes https://flatuicolors.com/
@@ -70,7 +70,7 @@ https://caniuse.com/
 -	function: flexbox, css grid, blur, appearance, ...
 
 
-### Visual Studio Code
+## Visual Studio Code
 
 ##### Extensions
 -	Prettier - Code formatter
@@ -117,7 +117,7 @@ Head : For things invisible in the browser
 Body : For all things visible in the browser
 
 
-### Developer Skills
+## Developer Skills
 Always Google when you don't know
 ex) css property to add mouse cursor to button css how to center an anchor element mdn css text align
 
@@ -147,7 +147,7 @@ Tips!
 -	When something looks strange, click the word on the page, and try 'inspect'
 
 
-### Testing Performance with Lighthouse
+## Testing Performance with Lighthouse
 -	Right click the page – Inspect – Lighthouse
 Click the checkbox you want to check
 - Performance, Best practices, Accessibility, SEO & Desktop
@@ -157,7 +157,7 @@ Generate report
 ex) image size, color contrast, etc.
 -	★ We should test the page every time before we launching it to the Internet
 
-### Optimize images
+## Optimize images
 Resize image
 -	You need a program to resize the image
 Squoosh : https://squoosh.app/
@@ -171,7 +171,7 @@ ex) Can I use ‘webp’
 If some browsers don’t support ‘webp’, we should write code to fix this problem
 
 
-### Deployment to Netlify
+## Deployment to Netlify
 https://www.netlify.com/
 Launch new site
 -	Drag and drop the folder
